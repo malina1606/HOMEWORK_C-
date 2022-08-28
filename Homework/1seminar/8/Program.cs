@@ -6,7 +6,7 @@ s = Console.ReadLine();
 N=Int32.Parse(s);
 //Console.WriteLine (N); 
 
-for (i=0; i<=N; i++) {
+for (i=1; i<=N; i++) {
     if (i%2==0)
         Console.WriteLine (i); 
    

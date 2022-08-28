@@ -1,49 +1,26 @@
-﻿int numberA = 5;
-int numberB = 7;
+﻿int A = 0;
+int B = 0;
+string sa;
+string sb;
 int max =0;
+Console.Write("Введите число A ");
+sa = Console.ReadLine();
+A=Int32.Parse(sa);
+Console.Write("Введите число B ");
+sb = Console.ReadLine();
+B=Int32.Parse(sb);
 
-if (numberA > numberB)
-    max = numberA;
+if (A > B)
+    max = A;
     else
-    max = numberB;
+    max = B;
 
 Console.Write("A= ");
-Console.Write(numberA);
+Console.Write(A);
 Console.Write("  ");
 Console.Write("B= ");
-Console.Write(numberB);
+Console.Write(B);
 Console.Write("  ");
 Console.Write("max = ");
 Console.WriteLine(max);
 
-numberA = 2;
-numberB = 10;
-max =0;
-if (numberA > numberB)
-    max = numberA;
-    else
-    max = numberB;
-Console.Write("A= ");
-Console.Write(numberA);
-Console.Write("  ");
-Console.Write("B= ");
-Console.Write(numberB);
-Console.Write("  ");
-Console.Write("max = ");
-Console.WriteLine(max);
-
-numberA = -9;
-numberB = -3;
-max =0;
-if (numberA > numberB)
-    max = numberA;
-    else
-    max = numberB;
-Console.Write("A= ");
-Console.Write(numberA);
-Console.Write("  ");
-Console.Write("B= ");
-Console.Write(numberB);
-Console.Write("  ");
-Console.Write("max = ");
-Console.Write(max);
