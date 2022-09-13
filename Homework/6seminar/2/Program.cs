@@ -11,10 +11,11 @@ double k2 = Convert.ToInt32(Console.ReadLine());
 double x =0;
 double y =0;
 if (k1-k2 == 0){
-    Console.WriteLine("Введите другие значения k1 и k2 ");
+    Console.WriteLine("Прямые параллельны, точек пересечения нет");
 }
+else {
 x = (b2-b1) / (k1 - k2);
 y =k1*x + b1;
 
 Console.WriteLine("Координаты точки переерения: " + "(" + x +"," + y +")");
-
+}

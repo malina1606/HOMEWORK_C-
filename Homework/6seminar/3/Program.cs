@@ -4,7 +4,6 @@
 
 int start = 1;
 int stop = 10;
-int index = 1;
 int proizv =0;
 Console.WriteLine("Введите размерность массива N: ");
 int N = Convert.ToInt32(Console.ReadLine());
@@ -15,16 +14,9 @@ for (int i=0; i<N; i++) {
     array[i] = value;
 }
 
-int first =1;
-first = array[0]*array[N-1];
-while (index<N-1) {
-    proizv = proizv + array[index-1]*array[N-index];                         // Не могу найти ошибку в вычислениях, подскажите где ошибка
-    Console.WriteLine("промежуточное произведение: "+ index +" "+ proizv);
-    index++;
+for(int i = 0; i < N/2; i++){
+    proizv += array[i]*array[N-i-1];
 }
 
-int a=0;
-a = proizv + first;
-for(int i=0; i < N; i++)
-Console.Write(" "+ array[i]+ " ");
-Console.WriteLine("itog: " + proizv);
+Console.WriteLine(string.Join(" ",array));
+Console.WriteLine(proizv);
